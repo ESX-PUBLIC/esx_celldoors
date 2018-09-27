@@ -1,3 +1,15 @@
+This is my edit to include the maps I am using too
+
+https://github.com/Ultrunz/Map-Sheriff-Ray (My edit of his map, just adding a 2nd for paleto)
+
+https://www.gta5-mods.com/maps/sandy-shores-sheriff-pd (only use this for the gates)
+
+https://forum.fivem.net/t/release-ymap-police-training-facility/98239 (training facility at the airport)
+
+I have added locks for all the doors I USE here.
+
+Also included is the hospital, FBI building, car dealer, vanilla unicorn and more. (shoutout to btwentyone for those)
+
 # esx_doorlock
 This is a door lock script for ESX, which is used to lock certain doors that shouldn't be accessable by normal citizens.
 
