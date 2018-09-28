@@ -6,6 +6,8 @@ https://www.gta5-mods.com/maps/sandy-shores-sheriff-pd (only use this for the ga
 
 https://forum.fivem.net/t/release-ymap-police-training-facility/98239 (training facility at the airport)
 
+https://www.gta5-mods.com/maps/mission-row-police-station-extended (for the evidence/interogation rooms)
+
 I have added locks for all the doors I USE here.
 
 Also included is the hospital, FBI building, car dealer, vanilla unicorn and more. (shoutout to btwentyone for those)
