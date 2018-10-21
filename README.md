@@ -8,6 +8,8 @@ https://forum.fivem.net/t/release-ymap-police-training-facility/98239 (training 
 
 https://www.gta5-mods.com/maps/mission-row-police-station-extended (for the evidence/interogation rooms)
 
+https://www.gta5-mods.com/maps/mission-row-pd-ymap-fivem-v1 (for mission row)
+
 I have added locks for all the doors I USE here.
 
 Also included is the hospital, FBI building, car dealer, vanilla unicorn and more. (shoutout to btwentyone for those)
