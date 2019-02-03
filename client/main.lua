@@ -47,7 +47,6 @@ Citizen.CreateThread(function()
 		for i=1, #Config.DoorList do
 			local doorID   = Config.DoorList[i]
 			local distance = GetDistanceBetweenCoords(playerCoords, doorID.objCoords.x, doorID.objCoords.y, doorID.objCoords.z, true)
-			local isAuthorized = IsAuthorized(doorID)
 
 			local maxDistance = 1.25
 			if doorID.distance then
@@ -63,17 +62,16 @@ Citizen.CreateThread(function()
 				end
 
 				local displayText = _U('unlocked')
+
 				if doorID.locked then
 					displayText = _U('locked')
-				end
-
-				if isAuthorized then
-					displayText = _U('press_button', displayText)
 				end
 
 				ESX.Game.Utils.DrawText3D(doorID.textCoords, displayText, size)
 				
 				if IsControlJustReleased(0, Keys['E']) then
+					local isAuthorized = IsAuthorized(doorID)
+					
 					if isAuthorized then
 						doorID.locked = not doorID.locked
 
