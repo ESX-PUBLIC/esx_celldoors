@@ -91,13 +91,15 @@ function ApplyDoorState(doorID)
 end
 
 function IsAuthorized(doorID)
-	if ESX.PlayerData.job == nil then
-		return false
-	end
+	local Inventory = ESX.GetPlayerData()["inventory"]
 
-	for i=1, #doorID.authorizedJobs, 1 do
-		if doorID.authorizedJobs[i] == ESX.PlayerData.job.name then
-			return true
+	for i = 1, #doorID.authorizedJobs, 1 do
+		for invId = 1, #Inventory do
+			if Inventory[invId]["count"] > 0 then
+				if doorID.authorizedJobs[i] == Inventory[invId]["name"] then
+					return true
+				end
+			end
 		end
 	end
 
