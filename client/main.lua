@@ -84,7 +84,11 @@ Citizen.CreateThread(function()
 end)
 
 function ApplyDoorState(doorID)
-	local closeDoor = GetClosestObjectOfType(doorID.objCoords.x, doorID.objCoords.y, doorID.objCoords.z, 1.0, GetHashKey(doorID.objName), false, false, false)
+	if tonumber(doorID.objName) == nil then
+		doorID.objName = GetHashKey(doorID.objName)
+	end
+
+	local closeDoor = GetClosestObjectOfType(doorID.objCoords.x, doorID.objCoords.y, doorID.objCoords.z, 1.0, doorID.objName, false, false, false)
 	FreezeEntityPosition(closeDoor, doorID.locked)
 end
 
