@@ -108,7 +108,11 @@ function ApplyDoorState(doorID)
 
 	local closeDoor = GetClosestObjectOfType(doorID.objCoords.x, doorID.objCoords.y, doorID.objCoords.z, 1.0, doorID.objName, false, false, false)
 
-	if doorID["locked"] and doorID["startRotation"] ~= nil and GetEntityRotation(closeDoor) ~= doorID["startRotation"] then
+	if doorID["startRotation"] == nil then
+		doorID["startRotation"] = GetEntityRotation(closeDoor)
+	end
+
+	if doorID["locked"] and GetEntityRotation(closeDoor) ~= doorID["startRotation"] then
 		SetEntityRotation(closeDoor, doorID["startRotation"]) 
 	end
 
