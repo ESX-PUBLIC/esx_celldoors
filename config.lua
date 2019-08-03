@@ -268,6 +268,16 @@ Config.DoorList = {
 		locked = true,
 		distance = 14,
 		size = 2
-	}
+	},
+	-- Principal bank pre-gate door (Reworked Robbery Bank System) https://github.com/Knaak53/esx_knatusrobberybank
+	{
+		objName = 'hei_v_ilev_bk_gate2_pris',
+		objCoords  = {x = 261.99899291992, y = 221.50576782227, z = 106.68346405029},
+		textCoords = {x = 261.99899291992, y = 221.50576782227, z = 107.68346405029},
+		authorizedJobs = { 'police' },
+		locked = true,
+		distance = 12,
+		size = 2
+	},
 	--]]
 }
