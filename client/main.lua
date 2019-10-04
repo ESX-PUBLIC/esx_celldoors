@@ -137,3 +137,8 @@ RegisterNetEvent('esx_doorlock:setState')
 AddEventHandler('esx_doorlock:setState', function(doorID, state)
 	Config.DoorList[doorID].locked = state
 end)
+
+RegisterNetEvent('esx_doorlock:syncConfigDoors')
+AddEventHandler('esx_doorlock:syncConfigDoors', function(doors)
+	Config.DoorList = doors
+end)

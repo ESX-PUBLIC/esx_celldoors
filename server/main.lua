@@ -45,3 +45,11 @@ function IsAuthorized(jobName, doorID)
 
 	return false
 end
+
+RegisterServerEvent('esx_doorlock:registerDoors')
+AddEventHandler('esx_doorlock:registerDoors', function(doors)
+	for _, doorInfo in pairs(Config.DoorList) do
+		table.insert(Config.DoorList, doorInfo)
+	end
+	TriggerClientEvent('esx_doorlock:syncConfigDoors', -1, Config.DoorList)
+end)
